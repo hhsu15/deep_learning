@@ -56,4 +56,13 @@ Once pooling is done, we then flattern/tranform the pooled fature maps into vecr
 
 Finally, take the vectors as input values and start the ANN process for training. The hidden layers in the CNN process are also called `fully connected layers`. The last layer of the ANN in this case represents all the features to determin the class (like cat or dog) - also called "voting". We can do multiple classifications. 
 
+#### Softmax & Cross-Entropy
 
+- Softmax
+A Function that brings the multi classfication probability of total of 1 (by default it won't be) - standardization function.
+
+- Cross-Entropy
+A way of loss function, for example, 
+  - Classfication Error: num_of_wrong_classification/total_observation
+  - Mean Squared Error: sum_of_squared_errors/total_observation
+  - Cross-Entropy: H(P, Q) = – sum x in X P(x) * log(Q(x)) (reference)[https://towardsdatascience.com/cross-entropy-for-dummies-5189303c7735]
